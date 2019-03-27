@@ -4,9 +4,15 @@ Feature: User Scenarios
   I want to cut the cord
   So that I can have the channels I need by being frugal
   
+# Background: User Page
+#   Given I am on the signin page
+#   And I follow "Sign in with Google"
+#   Then I am on the user home page
 Background: User Page
-  Given I am on the signin page
-  And I follow "Sign in with Google"
+  Given I am on the login page
+  #When I fill in "Email" with "test@test.com"
+  #And I fill in "Password" with "test123pass"
+  And I follow "Log in"
   Then I am on the user home page
 
   Given the following channels exist:

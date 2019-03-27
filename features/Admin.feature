@@ -4,9 +4,13 @@ Feature: Admin Powers
   I want to handle stream packages
   So that users have a lot of popular choices
   
+# Background: Admin is logged in
+#   Given I am on the signin page
+#   And I follow "Sign in with Google"
+#   Then I am on the home page
 Background: Admin is logged in
-  Given I am on the signin page
-  And I follow "Sign in with Google"
+  Given I am on the login page
+  And I follow "Log in"
   Then I am on the home page
   
   Given the following channels exist:

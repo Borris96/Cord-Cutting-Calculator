@@ -1,5 +1,5 @@
 class ChannelsController < ApplicationController
-  before_action :authenticate
+  # before_action :authenticate
   before_action :set_channel, only: [:show, :edit, :update, :destroy]
 
   # GET /channels

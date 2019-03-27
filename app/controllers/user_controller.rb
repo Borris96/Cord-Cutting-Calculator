@@ -1,5 +1,5 @@
 class UserController < ApplicationController
-  before_action :authenticate
+  # before_action :authenticate
   def input
     @user = User.find(session[:user_id])
     user_channels = @user.channels_users

@@ -22,16 +22,16 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-exp
 anded="false">Packages<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">View Packages</a></li>
-              <li><a href="#">Create Packages</a></li>
+              <li><%= link_to "View Packages", packages_path %></li>
+              <li><%= link_to "Create Packages", new_packages_path %></li>
             </ul>
           </li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-exp
 anded="false">Channels<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">View Channels</a></li>
-              <li><a href="#">Create Channels</a></li>
+              <li><%= link_to "View Channels", channels_path %></li>
+              <li><%= link_to "Create Channels", new_channels_path %></li>
             </ul>
           </li>
         <% end %>  
